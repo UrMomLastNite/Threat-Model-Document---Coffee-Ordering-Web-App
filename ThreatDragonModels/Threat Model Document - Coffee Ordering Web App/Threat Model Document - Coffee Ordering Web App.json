@@ -1604,19 +1604,6 @@
                   "score": ""
                 },
                 {
-                  "id": "d9cc8c03-f19e-4d4b-a249-ddc5933b063e",
-                  "title": "Web Application Server DoS ",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Denial of service",
-                  "description": "An attacker could flood the Web Application Server with excessive requests, making it unavailable.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 20,
-                  "score": ""
-                },
-                {
                   "id": "9f233967-bf8f-4809-b600-bc3277f834c9",
                   "title": "Staff Account Spoofing",
                   "status": "Open",
@@ -1674,7 +1661,7 @@
                 "tampering": 1,
                 "repudiation": 2,
                 "informationDisclosure": 3,
-                "denialOfService": 1,
+                "denialOfService": 0,
                 "elevationOfPrivilege": 2
               }
             }
@@ -3983,6 +3970,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "",
-    "threatTop": 49
+    "threatTop": 50
   }
 }
