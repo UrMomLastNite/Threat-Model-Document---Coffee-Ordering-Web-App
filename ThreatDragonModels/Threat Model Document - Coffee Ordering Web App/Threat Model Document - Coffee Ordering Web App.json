@@ -1566,10 +1566,23 @@
                   "new": false,
                   "number": 20,
                   "score": ""
+                },
+                {
+                  "id": "9f233967-bf8f-4809-b600-bc3277f834c9",
+                  "title": "Staff Account Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker could impersonate staff to manipulate order statuses, access sales reports, or modify menu items and application configurations.\n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 24,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 0,
+                "spoofing": 1,
                 "tampering": 1,
                 "repudiation": 2,
                 "informationDisclosure": 1,
@@ -1761,15 +1774,6 @@
                 "informationDisclosure": 1,
                 "denialOfService": 1
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -3679,6 +3683,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "",
-    "threatTop": 22
+    "threatTop": 24
   }
 }
