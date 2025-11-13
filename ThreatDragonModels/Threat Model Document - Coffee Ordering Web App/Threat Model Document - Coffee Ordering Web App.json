@@ -1716,13 +1716,6 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 2
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1890,7 +1883,7 @@
                 },
                 {
                   "id": "81df3cac-adce-4e8c-8b6f-f481faadb59e",
-                  "title": "New STRIDE threat",
+                  "title": "Staff Credential Disclosure",
                   "status": "Open",
                   "severity": "High",
                   "type": "Information disclosure",
@@ -1905,7 +1898,7 @@
               "threatFrequency": {
                 "tampering": 1,
                 "repudiation": 2,
-                "informationDisclosure": 2,
+                "informationDisclosure": 3,
                 "denialOfService": 0
               }
             }
