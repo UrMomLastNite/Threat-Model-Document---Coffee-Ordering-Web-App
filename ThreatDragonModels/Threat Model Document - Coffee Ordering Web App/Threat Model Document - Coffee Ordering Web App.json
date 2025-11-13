@@ -2357,8 +2357,8 @@
                 "text": "Manager"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2455,9 +2455,40 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "b61bad5a-59e7-4999-8672-76033795824c",
+                  "title": "Staff Account Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker could impersonate staff to manipulate order statuses, access sales reports, or modify menu items and application configurations.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 40,
+                  "score": ""
+                },
+                {
+                  "id": "36d358f0-20d0-48c5-9da6-f818be75019b",
+                  "title": "Staff Action Repudiation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Staff members (Barista, Manager, Administrator) could deny performing actions if audit logs are insufficient, not immutable, or can be tampered with.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 41,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
             }
           },
           {
@@ -2748,19 +2779,6 @@
                   "score": ""
                 },
                 {
-                  "id": "286dc5ec-59da-457d-b694-e6cf4438693d",
-                  "title": "MongoDB Database DoS",
-                  "status": "Open",
-                  "severity": "Low",
-                  "type": "Denial of service",
-                  "description": "Malicious or poorly optimized queries could overload the database, making it unresponsive",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 32,
-                  "score": ""
-                },
-                {
                   "id": "70b954f2-2b87-4d13-8857-983bd8904693",
                   "title": "Horizontal Privilege Escalation",
                   "status": "Open",
@@ -2772,15 +2790,54 @@
                   "new": false,
                   "number": 34,
                   "score": ""
+                },
+                {
+                  "id": "235c224a-1028-4984-9480-8ee57e95e402",
+                  "title": "Barista/Manager to Administrator Privilege Escalation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "A Barista or Manager could exploit a vulnerability to gain Administrator privileges. ",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 42,
+                  "score": ""
+                },
+                {
+                  "id": "f6ddb2bc-4ad2-485f-8992-9dbfe6861d0c",
+                  "title": "Application Code/Configuration Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Malicious modification of the application’s source code, server configurations, or environment variables could introduce backdoors or disable security features.\n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 43,
+                  "score": ""
+                },
+                {
+                  "id": "d8ef7288-efbe-4b0c-ba93-b45cd9a6875a",
+                  "title": "Customer PII Disclosure",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Unauthorized access to customer names, contact details, delivery addresses, and order history.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 44,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 1,
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 1,
-                "informationDisclosure": 1,
-                "denialOfService": 1,
-                "elevationOfPrivilege": 1
+                "informationDisclosure": 2,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 2
               }
             },
             "tools": {
@@ -2955,24 +3012,24 @@
                   "score": ""
                 },
                 {
-                  "id": "74830f80-6944-4bc0-9748-7f2ad06bb2d3",
-                  "title": "MongoDB Database DoS",
+                  "id": "05b32a4a-3ca5-46d8-900e-e8f332226582",
+                  "title": "Customer PII Disclosure ",
                   "status": "Open",
-                  "severity": "Low",
-                  "type": "Denial of service",
-                  "description": "Malicious or poorly optimized queries could overload the database, making it unresponsive",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Unauthorized access to customer names, contact details, delivery addresses, and order history.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 33,
+                  "number": 45,
                   "score": ""
                 }
               ],
               "threatFrequency": {
                 "tampering": 1,
                 "repudiation": 1,
-                "informationDisclosure": 1,
-                "denialOfService": 1
+                "informationDisclosure": 2,
+                "denialOfService": 0
               }
             }
           },
@@ -3900,6 +3957,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "",
-    "threatTop": 39
+    "threatTop": 45
   }
 }
