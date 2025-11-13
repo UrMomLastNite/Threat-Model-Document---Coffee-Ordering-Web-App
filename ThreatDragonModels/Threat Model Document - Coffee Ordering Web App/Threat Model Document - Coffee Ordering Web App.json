@@ -1578,19 +1578,6 @@
                   "score": ""
                 },
                 {
-                  "id": "b8b5d649-6808-4bf4-a5f8-95d063037d06",
-                  "title": "MongoDB Database DoS",
-                  "status": "Open",
-                  "severity": "Low",
-                  "type": "Denial of service",
-                  "description": "Malicious or poorly optimized queries could overload the database, making it unresponsive.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 15,
-                  "score": ""
-                },
-                {
                   "id": "0e9ec4a8-8ba4-4581-8f5d-8b8c5ee520dd",
                   "title": "Customer PII Disclosure",
                   "status": "Open",
@@ -1641,15 +1628,54 @@
                   "new": false,
                   "number": 24,
                   "score": ""
+                },
+                {
+                  "id": "2eff65f2-3c4b-4b4c-a945-cdb4c4bce125",
+                  "title": "Application Code and Configuration Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Exposure of source code, server configurations, environment variables, or API keys.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 46,
+                  "score": ""
+                },
+                {
+                  "id": "85046851-5510-481c-99c9-415536188f90",
+                  "title": "Barista/Manager to Administrator Privilege Escalation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "A Barista or Manager could exploit a vulnerability to gain Administrator privileges.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 47,
+                  "score": ""
+                },
+                {
+                  "id": "4c1b8ae6-3e64-461b-a811-77cc1a6d13f6",
+                  "title": "Staff Credential Disclosure",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Exposure of usernames, passwords, or session tokens for staff members due to insecure storage or unencrypted transmission.\n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 48,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 1,
                 "tampering": 1,
                 "repudiation": 2,
-                "informationDisclosure": 1,
-                "denialOfService": 2,
-                "elevationOfPrivilege": 1
+                "informationDisclosure": 3,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 2
               }
             }
           },
@@ -1804,19 +1830,6 @@
                   "score": ""
                 },
                 {
-                  "id": "baa5026d-a43a-4ee2-8093-a9d84d72d217",
-                  "title": "MongoDB Database DoS",
-                  "status": "Open",
-                  "severity": "Low",
-                  "type": "Denial of service",
-                  "description": "Malicious or poorly optimized queries could overload the database, making it unresponsive.\n",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 16,
-                  "score": ""
-                },
-                {
                   "id": "6b7bf644-266b-45ee-a11f-c0f757ee8c72",
                   "title": "Customer PII Disclosure",
                   "status": "Open",
@@ -1828,13 +1841,26 @@
                   "new": false,
                   "number": 18,
                   "score": ""
+                },
+                {
+                  "id": "81df3cac-adce-4e8c-8b6f-f481faadb59e",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Exposure of usernames, passwords, or session tokens for staff members due to insecure storage or unencrypted transmission.\n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 49,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "tampering": 1,
                 "repudiation": 2,
-                "informationDisclosure": 1,
-                "denialOfService": 1
+                "informationDisclosure": 2,
+                "denialOfService": 0
               }
             }
           },
@@ -3957,6 +3983,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "",
-    "threatTop": 45
+    "threatTop": 49
   }
 }
