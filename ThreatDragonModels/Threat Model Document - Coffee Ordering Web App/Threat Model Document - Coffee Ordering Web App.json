@@ -1320,8 +1320,8 @@
                 "text": "Web Application Server"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1418,12 +1418,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "2ed36336-6513-4141-bb06-c046a4707b2d",
+                  "title": "Order Data Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker could modify order details (e.g., items, quantities, prices, status) in transit or at rest",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -1440,11 +1462,13 @@
                 "text": "Database"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1541,13 +1565,33 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "ffdfebc9-aa38-4191-b955-c4ddaf632fa3",
+                  "title": "Order Data Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker could modify order details (e.g., items, quantities, prices, status) in transit or at rest",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -3457,6 +3501,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "",
-    "threatTop": 4
+    "threatTop": 6
   }
 }
